@@ -5,7 +5,7 @@ import os
 import numpy as np
 import random
 
-def medsim.gnf(path="", dataset_name="", cat_list=[0, 1], intv_med=None, moderator=None, quant_mod=4, model_name='models', seed=None, n_mce_samples=10000, inv_datafile_name='potential_outcome'):
+def sim.med(path="", dataset_name="", cat_list=[0, 1], intv_med=None, moderator=None, quant_mod=4, model_name='models', seed=None, n_mce_samples=10000, inv_datafile_name='potential_outcome'):
 
     results_df = pd.DataFrame(columns=["Potential Outcome", "Value"])
 

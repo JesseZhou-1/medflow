@@ -1,4 +1,4 @@
-# medsimGNF: Simulation-Based Causal Mediation Analysis Using Graphical Normalizing Flows
+# medsimGNF: An Python Package for Simulation-Based Causal Mediation Analysis with Multiple Mediators Using Graphical Normalizing Flows
 
 ## About medsimGNF
 

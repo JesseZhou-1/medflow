@@ -121,29 +121,6 @@ Additionally, a **`bootstrap`** function is provided to facilitate parallel exec
 
 ---
 
-### Data Preprocessing
-
-   ```python
-    from cGNF import process
-    process(
-        path='/path_to_data_directory/',  # File path where the dataset and DAG are located
-        dataset_name='your_dataset_name',  # Name of the dataset
-        dag_name= 'you_adj_mat_name',  # Name of the adjacency matrix (DAG) to be used
-
-    )
-   ```
-
-   *Notes*:
-   - `cat_var`: If the dataset has no categorical variables, set `cat_var=None`.
-
-   - `sens_corr`: If specified, the train and sim functions will produce bias-adjusted estimates using the supplied disturbance correlations.
-   
-   - The function will automatically remove any row that contains at least one missing value.
-
-   - The function converts the dataset and the adjacency matrix into tensors. These tensors are then packaged into a PKL file named after `dataset_name` and saved within the `path` directory. This PKL file is later used for model training.
-
----
-
 ### Training
    
    ```python

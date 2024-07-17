@@ -1,4 +1,6 @@
-# medsimGNF: 
+# medsimGNF: Simulation-Based Causal Mediation Analysis Using Graphical Normalizing Flows
+
+## About medsimGNF
 
 
 ---

@@ -222,28 +222,24 @@ Additionally, a **`bootstrap`** function is provided to facilitate parallel exec
 ### Bootstrapping
 
    ```python
-   process_args={
+   trainmed_args={
       "seed": 2121380
       }
 
-   train_args={
-      "seed": 2121380
-      }
-
-   sim_args1={
+   simmed_args1={
       "treatment": 'A',
       "outcome": 'Y',
       "inv_datafile_name": 'A_Y'
       }
 
-   sim_args2={
+   simmed_args2={
       "treatment": 'C',
       "outcome": 'Y',
       "inv_datafile_name": 'C_Y'
       }
 
     from cGNF import bootstrap
-    bootstrap(
+    bootstrap.med(
        n_iterations=10,  # Number of bootstrap iterations
        num_cores_reserve=2,  # Number of cores to reserve
        base_path='/path_to_data_directory/',  # Base directory where the dataset and DAG are located

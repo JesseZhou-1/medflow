@@ -151,6 +151,7 @@ Additionally, a **`bootstrap`** function is provided to facilitate parallel exec
         test_size=0.2,  # Proportion of data used for the validation set
         cat_var=['X', 'Y'],  # List of categorical variables
         sens_corr={("X", "Y"):0.2, ("C","Y"):0.1}, # Vector of sensitivity parameters (i.e., normalized disturbance correlations)
+        confounder=['C']
         treatment='X',  # Treatment variable
         mediator=['M1', 'M2'],  # List mediators for mediation analysis (i.e., to compute direct, indirect, or path-specific effects)
         outcome='Y',   # Outcome variable
@@ -181,13 +182,12 @@ Additionally, a **`bootstrap`** function is provided to facilitate parallel exec
     sim(
         path='/path_to_data_directory/',  # File path where the PKL file is located
         dataset_name='your_dataset_name',  # Name of the dataset
-        model_name='models',  # Name of the folder where the trained model is located
-        n_mce_samples=50000,  #  Number of Monte Carlo draws from the trained distribution model
         cat_list=[0, 1],  # Treatment values for counterfactual outcomes
+        intv_med = ['M'], #
         moderator=['C'],  # Specify to conduct moderation analysis (i.e., compute effects conditional on the supplied moderator)
         quant_mod=4,  # If the moderator is continuous, specify the number of quantiles used to evaluate the conditional effects
-        confounder=['C']
-        intv_med = ['M']
+        model_name='models',  # Name of the folder where the trained model is located
+        n_mce_samples=50000,  #  Number of Monte Carlo draws from the trained distribution model
         inv_datafile_name='your_counterfactual_dataset'  # Name of the file where Monte Carlo samples are saved
     )
    ```

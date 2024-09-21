@@ -125,7 +125,7 @@ Additionally, a **`bootstrap`** function is provided to facilitate parallel exec
    
    ```python
     from cGNF import train
-    trainMed(
+    train.med(
         path='/path_to_data_directory/',  # File path where the PKL file is located
         dataset_name='your_dataset_name',  # Name of the dataset
         test_size=0.2,  # Proportion of data used for the validation set
@@ -159,7 +159,7 @@ Additionally, a **`bootstrap`** function is provided to facilitate parallel exec
 
    ```python
     from cGNF import sim
-    simMed(
+    sim.med(
         path='/path_to_data_directory/',  # File path where the PKL file is located
         dataset_name='your_dataset_name',  # Name of the dataset
         cat_list=[0, 1],  # Treatment values for counterfactual outcomes

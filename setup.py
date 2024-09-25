@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='cGNF',
+    name='medsimGNF',
     version='0.9.4',  # start with a small number and increment it with every change
     packages=find_packages(),
     install_requires=[
@@ -13,13 +13,14 @@ setup(
         'causalgraphicalmodels',
         'UMNN',
         'joblib',
+        'cGNF'
     ],
-    author='cGNF-Team',
-    author_email='cgnf.team@gmail.com',
-    description='A Python Module for Implementing causal-Graphical Normalizing Flows.',
+    author='MedSim-team',
+    author_email='medsim.team@gmail.com',
+    description='',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    url='https://github.com/cGNF-Dev/cGNF',
+    url='https://github.com/MedSim-Dev/medsimGNF',
     license='BSD License',
     classifiers=[
         'Programming Language :: Python :: 3',

@@ -1,4 +1,2 @@
-from .simulation import sim
-from .processing import process
-from .training import train
-from .bootstraping import bootstrap
+from .simmed import sim.med
+from .trainmed import train.med

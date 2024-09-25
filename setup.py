@@ -17,7 +17,7 @@ setup(
     ],
     author='MedSim-team',
     author_email='medsim.team@gmail.com',
-    description='',
+    description='An Python Package for Simulation-Based Causal Mediation Analysis with Multiple Mediators Using Graphical Normalizing Flows.',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
     url='https://github.com/MedSim-Dev/medsimGNF',

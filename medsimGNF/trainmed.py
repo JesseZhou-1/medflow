@@ -3,7 +3,7 @@ import numpy as np
 import torch  # Importing the PyTorch library, which provides tools for deep learning.
 import pickle  # Importing the pickle module, which allows to serialize and deserialize Python object structures.
 import ast
-from cGNF.training import train
+from cGNF import train
 import collections.abc
 collections.Iterable = collections.abc.Iterable
 import networkx as nx

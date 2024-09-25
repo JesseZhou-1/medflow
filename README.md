@@ -1,8 +1,8 @@
-# medsimGNF: An Python Package for Simulation-Based Causal Mediation Analysis with Multiple Mediators Using Graphical Normalizing Flows
+# medsimGNF: A Python Package for Simulation-Based Causal Mediation Analysis with Multiple Mediators Using Graphical Normalizing Flows
 
 ## About medsimGNF
 
-`medsimGNF` is an advanced R package designed for causal mediation analysis, utilizing causal-Graphical Normalizing Flows (cGNFs) to handle complex scenarios involving multiple mediators or exposure-induced confounders. This semi-parametric approach integrates deep learning networks with directed acyclic graphs (DAGs) to model data distributions without strict parametric assumptions. Suitable for a wide array of causal effects, medsimGNF enables robust sensitivity analysis and the generation of bias-adjusted estimates, enhancing the reliability and precision of causal inferences in intricate mediation pathways.
+`medsimGNF` is an advanced Python package designed for causal mediation analysis, utilizing causal-Graphical Normalizing Flows (cGNFs) to handle complex scenarios involving multiple mediators or exposure-induced confounders. This semi-parametric approach integrates deep learning networks with directed acyclic graphs (DAGs) to model data distributions without strict parametric assumptions. Suitable for a wide array of causal effects, medsimGNF enables robust sensitivity analysis and the generation of bias-adjusted estimates, enhancing the reliability and precision of causal inferences in intricate mediation pathways.
 
 ---
 

@@ -42,6 +42,8 @@ def train.med(path="", dataset_name="", treatment='', confounder=None, mediator=
 
     df_cDAG.to_csv(path + dataset_name + '_DAG.csv')
 
+    df.dropna(inplace=True)
+
     print("------- Adjacency Matrix -------")
     print(df_cDAG)
 

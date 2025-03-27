@@ -13,7 +13,7 @@ setup(
         'causalgraphicalmodels',
         'UMNN',
         'joblib',
-        'cGNF @ git+https://github.com/username/cGNF.git@main#egg=cGNF',
+        'cGNF @ git+https://github.com/cGNF-Dev/cGNF.git@main#egg=cGNF',
     ],
     author='MedSim-team',
     author_email='medsim.team@gmail.com',

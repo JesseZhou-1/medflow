@@ -1,4 +1,4 @@
-# MedFlow: A Python Package for Simulation-Based Causal Mediation Analysis with Multiple Mediators Using Graphical Normalizing Flows
+# MedFlow: A Python Package for Simulation-Based Causal Mediation Analysis with Multiple Mediators Using causal-Graphical Normalizing Flows
 
 ## About MedFlow
 

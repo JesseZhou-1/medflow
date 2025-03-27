@@ -2,7 +2,7 @@
 
 ## About MedFlow
 
-`MedFlow` is an advanced Python package designed for causal mediation analysis, utilizing causal-Graphical Normalizing Flows (cGNFs) to handle complex scenarios involving multiple mediators or exposure-induced confounders. This semi-parametric approach integrates deep learning networks with directed acyclic graphs (DAGs) to model data distributions without strict parametric assumptions. Suitable for a wide array of causal effects, MedFlow enables robust sensitivity analysis and the generation of bias-adjusted estimates, enhancing the reliability and precision of causal inferences in intricate mediation pathways.
+`MedFlow` is an Python package designed for causal mediation analysis, utilizing causal-Graphical Normalizing Flows (cGNFs) to handle complex scenarios involving multiple mediators or exposure-induced confounders. This semi-parametric approach integrates deep learning networks with directed acyclic graphs (DAGs) to model data distributions without strict parametric assumptions. Designed to accommodate a broad range of causal effects, it also supports flexible sensitivity analysis.
 
 ---
 

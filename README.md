@@ -1,19 +1,19 @@
-# medsimGNF: A Python Package for Simulation-Based Causal Mediation Analysis with Multiple Mediators Using Graphical Normalizing Flows
+# medflow: A Python Package for Simulation-Based Causal Mediation Analysis with Multiple Mediators Using Graphical Normalizing Flows
 
-## About medsimGNF
+## About medflow
 
-`medsimGNF` is an advanced Python package designed for causal mediation analysis, utilizing causal-Graphical Normalizing Flows (cGNFs) to handle complex scenarios involving multiple mediators or exposure-induced confounders. This semi-parametric approach integrates deep learning networks with directed acyclic graphs (DAGs) to model data distributions without strict parametric assumptions. Suitable for a wide array of causal effects, medsimGNF enables robust sensitivity analysis and the generation of bias-adjusted estimates, enhancing the reliability and precision of causal inferences in intricate mediation pathways.
+`medflow` is an advanced Python package designed for causal mediation analysis, utilizing causal-Graphical Normalizing Flows (cGNFs) to handle complex scenarios involving multiple mediators or exposure-induced confounders. This semi-parametric approach integrates deep learning networks with directed acyclic graphs (DAGs) to model data distributions without strict parametric assumptions. Suitable for a wide array of causal effects, medflow enables robust sensitivity analysis and the generation of bias-adjusted estimates, enhancing the reliability and precision of causal inferences in intricate mediation pathways.
 
 ---
 
 ## User Guide
 
-This guide walks you through setting up the Python environment and utilizing `medsimGNF` to analyze your own dataset. For users who are new to Python, we recommend following the instructions step by step. Experienced Python users can directly `pip install medsimGNF` (currently not available; please refer to [Install `medsimGNF` and Dependencies](#install-cgnf-and-dependencies) for installation details) to download the libraries, and then skip to [Setting up a Dataset](#setting-up-a-dataset). 
+This guide walks you through setting up the Python environment and utilizing `medflow` to analyze your own dataset. For users who are new to Python, we recommend following the instructions step by step. Experienced Python users can directly `pip install medflow` (currently not available; please refer to [Install `medflow` and Dependencies](#install-cgnf-and-dependencies) for installation details) to download the libraries, and then skip to [Setting up a Dataset](#setting-up-a-dataset). 
 
 ---
 ### Tutorial Contents
 
-1. [Setting up `medsimGNF` with PyCharm](#setting-up-cgnf-with-pycharm)
+1. [Setting up `medflow` with PyCharm](#setting-up-cgnf-with-pycharm)
 2. [Setting up a Dataset](#setting-up-a-dataset)
    - [Preparing a Data Frame](#preparing-a-data-frame)
    - [Specifying a Directed Acyclic Graph (DAG)](#specifying-a-directed-acyclic-graph-dag)
@@ -25,7 +25,7 @@ This guide walks you through setting up the Python environment and utilizing `me
 
 ---
 
-## Setting up `medsimGNF` with PyCharm
+## Setting up `medflow` with PyCharm
 
 1. **Install Python**:
    
@@ -63,11 +63,11 @@ This guide walks you through setting up the Python environment and utilizing `me
 
    Once the project is created, PyCharm should automatically activate the virtual environment for you. You'll see the environment's name in the bottom-right corner of the PyCharm window.
 
-7. **Install `medsimGNF` and Dependencies**:
+7. **Install `medflow` and Dependencies**:
 
    In PyCharm, open the terminal (usually at the bottom of the IDE).
    
-   Install the `medsimGNF` package:
+   Install the `medflow` package:
 
      ```bash
      pip install 
@@ -85,7 +85,7 @@ This guide walks you through setting up the Python environment and utilizing `me
      pip install torch torchvision torchaudio cudatoolkit=<desired_version, e.g., 11.2> -c pytorch
      ```
 
-9. **Start Developing with `medsimGNF`**:
+9. **Start Developing with `medflow`**:
 
    - Right-click on the project folder in the "Project" pane.
      

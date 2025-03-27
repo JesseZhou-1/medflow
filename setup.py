@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='medsimGNF',
+    name='medflow',
     version='0.1.0',  # Increment as needed
     packages=find_packages(),
     install_requires=[
@@ -20,7 +20,7 @@ setup(
     description='A Python Package for Simulation-Based Causal Mediation Analysis with Multiple Mediators Using Graphical Normalizing Flows.',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    url='https://github.com/MedSim-Dev/medsimGNF',
+    url='https://github.com/MedSim-Dev/medflow',
     license='BSD License',
     classifiers=[
         'Programming Language :: Python :: 3',

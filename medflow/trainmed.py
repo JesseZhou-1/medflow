@@ -149,7 +149,7 @@ def train.med(path="", dataset_name="", treatment='', confounder=None, mediator=
         pickle.dump(pickle_objects, f)
 
     train(path=path, dataset_name=dataset_name, model_name=model_name,
-          resume=False,
+          resume=resume,
           trn_batch_size=trn_batch_size, val_batch_size=val_batch_size, learning_rate=learning_rate, seed=seed,
           nb_epoch=nb_epoch, nb_estop=nb_estop, val_freq=val_freq,
           emb_net=emb_net,

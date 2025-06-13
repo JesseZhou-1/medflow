@@ -1,0 +1,28 @@
+# Byte-compiled / env files
+__pycache__/
+*.py[cod]
+venv/
+medflow.egg-info/
+
+# Distribution/build artifacts
+build/
+dist/
+*.egg
+*.egg-info/
+pip-wheel-metadata/
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual-env marker files
+.env
+.env.*
+
+# MacOS Finder
+.DS_Store
+
+# Optional editor/IDE files
+/.idea/
+/.vscode/

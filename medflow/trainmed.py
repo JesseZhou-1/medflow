@@ -10,7 +10,7 @@ import networkx as nx
 from causalgraphicalmodels import CausalGraphicalModel
 
 
-def train.med(path="", dataset_name="", treatment='', confounder=None, mediator=None, outcome=None,
+def train_med(path="", dataset_name="", treatment='', confounder=None, mediator=None, outcome=None,
            test_size=0.2, cat_var=None, sens_corr=None, seed_split=None,
            model_name='models', resume=False,
            trn_batch_size=128, val_batch_size=2048, learning_rate=1e-4, seed=None,

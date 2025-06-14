@@ -6,7 +6,7 @@ with open("README.md", encoding="utf-8") as f:
 
 setup(
     name="medflow",
-    version="0.1.5",  # bump for each release
+    version="0.1.6",  # bump for each release
     author="Jesse Zhou",
     author_email="jessezhou1@uchicago.edu",
     description=(

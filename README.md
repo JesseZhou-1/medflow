@@ -70,13 +70,19 @@ This guide walks you through setting up the Python environment and utilizing `Me
    Install the `MedFlow` package:
 
      ```bash
-     pip install 
+     pip install \
+     --index-url https://test.pypi.org/simple/ \
+     --extra-index-url https://pypi.org/simple/ \
+     medflow
      ```
 
    To update the package in the future:
 
      ```bash
-     pip install --upgrade 
+     pip install --upgrade \
+     --index-url https://test.pypi.org/simple/ \
+     --extra-index-url https://pypi.org/simple/ \
+     medflow
      ```
 
    If you need PyTorch with CUDA support:
@@ -113,9 +119,9 @@ This guide walks you through setting up the Python environment and utilizing `Me
 
 `cGNF` is implemented in three stages, corresponding to three separate Python functions:
    
-2. **`train.med`**: Trains the model.
+2. **`train_med`**: Trains the model.
    
-3. **`sim.med`**: Estimates potential outcomes.
+3. **`sim_med`**: Estimates potential outcomes.
 
 Additionally, a **`bootstrap`** function is provided to facilitate parallel execution of these functions across multiple CPU cores.
 
@@ -125,7 +131,7 @@ Additionally, a **`bootstrap`** function is provided to facilitate parallel exec
    
    ```python
     from cGNF import train
-    train.med(
+    train_med(
         path='/path_to_data_directory/',  # File path where the PKL file is located
         dataset_name='your_dataset_name',  # Name of the dataset
         test_size=0.2,  # Proportion of data used for the validation set
@@ -159,7 +165,7 @@ Additionally, a **`bootstrap`** function is provided to facilitate parallel exec
 
    ```python
     from cGNF import sim
-    sim.med(
+    sim_med(
         path='/path_to_data_directory/',  # File path where the PKL file is located
         dataset_name='your_dataset_name',  # Name of the dataset
         cat_list=[0, 1],  # Treatment values for counterfactual outcomes

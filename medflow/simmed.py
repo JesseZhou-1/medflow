@@ -15,7 +15,7 @@ def sim_med(path="", dataset_name="", cat_list=[0, 1], intv_med=None, moderator=
     path_save = os.path.join(path, model_name)
 
     # Load the previously saved PyTorch model from the disk
-    model = torch.load(path_save + '/_best_model.pt', map_location=device)
+    model = torch.load(path_save + '/_best_model.pt', map_location=device, weights_only=False)
 
     # Load original dataset
     with open(path + dataset_name + '.pkl', 'rb') as f:

@@ -32,7 +32,7 @@ setup(
         "causalgraphicalmodels",
         "UMNN",
         "joblib",
-        "cGNF @ git+https://github.com/cGNF-Dev/cGNF.git@main#egg=cGNF",
+        "cGNF>=0.1.0",
     ],
 
     classifiers=[

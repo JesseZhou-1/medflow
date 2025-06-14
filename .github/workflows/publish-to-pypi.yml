@@ -33,25 +33,12 @@ jobs:
       - name: Validate distributions
         run: twine check dist/*
 
-#      - name: Publish to Test PyPI
-#        if: startsWith(github.ref, 'refs/tags/test-')
-#        uses: pypa/gh-action-pypi-publish@release/v1
-#        with:
-#          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
-#          repository-url: https://test.pypi.org/legacy/
-
-      # replace your “Publish to Test PyPI” step with this temporarily:
-      - name: Debug upload to Test PyPI
+      - name: Publish to Test PyPI
         if: startsWith(github.ref, 'refs/tags/test-')
-        run: |
-          python -m pip install --upgrade twine
-          twine upload \
-            --repository-url https://test.pypi.org/legacy/ \
-            --username __token__ \
-            --password "$TEST_PYPI_API_TOKEN" \
-            --verbose dist/*
-        env:
-          TEST_PYPI_API_TOKEN: ${{ secrets.TEST_PYPI_API_TOKEN }}
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          repository-url: https://test.pypi.org/legacy/
 
       - name: Publish to PyPI
         if: startsWith(github.ref, 'refs/tags/release-')

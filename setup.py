@@ -10,8 +10,7 @@ setup(
     author="Jesse Zhou",
     author_email="jessezhou1@uchicago.edu",
     description=(
-        "A Python package for simulation-based causal mediation analysis "
-        "with multiple mediators using causal-Graphical Normalizing Flows."
+        "A Python package for analyzing causal mediation using Normalizing Flows."
     ),
     long_description=long_description,
     long_description_content_type="text/markdown",

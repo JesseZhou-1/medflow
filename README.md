@@ -71,8 +71,7 @@ This guide walks you through setting up the Python environment and utilizing `Me
 
      ```bash
      pip install \
-     --index-url https://test.pypi.org/simple/ \
-     --extra-index-url https://pypi.org/simple/ \
+     --extra-index-url https://test.pypi.org/simple/ \
      medflow
      ```
 
@@ -80,8 +79,7 @@ This guide walks you through setting up the Python environment and utilizing `Me
 
      ```bash
      pip install --upgrade \
-     --index-url https://test.pypi.org/simple/ \
-     --extra-index-url https://pypi.org/simple/ \
+     --extra-index-url https://test.pypi.org/simple/ \
      medflow
      ```
 

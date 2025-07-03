@@ -31,7 +31,7 @@ setup(
         "causalgraphicalmodels",
         "UMNN",
         "joblib",
-        "cGNF>=0.1.0",
+        "cGNF",
     ],
 
     classifiers=[
